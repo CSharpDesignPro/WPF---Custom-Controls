@@ -1,0 +1,75 @@
+﻿<!--
+    /// Author : R. Arun Mutharasu
+    /// Created On :13-06-2022
+    /// YouTube Channel : C# Design Pro 
+ -->
+
+<UserControl x:Class="Custom_Control_App.Artboards.Pawn"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Custom_Control_App.Artboards"
+             mc:Ignorable="d"
+             d:DesignHeight="90"
+             d:DesignWidth="90">
+
+    <Grid>
+
+        <!-- 
+        
+        // Draw Commands used in this App //
+        
+        1. Move Command [ M ]
+        
+           Move [StartPoint],[EndPoint]
+        
+           M0,0
+        
+        2. Line Command [ L ]
+        
+           Line [StartPoint],[EndPoint]
+        
+           L0,0
+        
+        3. Cubic Bezier Curve Command [ C ]
+        
+           Curve [ControlPoint 1],[ControlPoint 2],[EndPoint]
+        
+                 [Left/Right,Top/Bottom],[Left/Right,Top/Bottom],[Left/Right,Top/Bottom]
+        
+           C0,0 0,0 0,0
+        
+        -->
+
+        <!--// Pawn Path //-->
+
+        <Path HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Stroke="#FFFFFF"
+              StrokeThickness="1"
+              Fill="#FFFFFF"
+              StrokeStartLineCap="Round"
+              StrokeEndLineCap="Round"
+              Width="90"
+              Height="90"
+              Data="M19,85
+                    L71,85
+                    C74,85 74,80 66,73
+                    C75,75 77,62 64,63
+                    C63,58 60,60 53,48
+                    C60,46 58,38 51,39
+                    C51,35 54,37 56,30
+                    C60,10 30,10 34,30
+                    C35,35 39,36 39,39
+                    C32,38 30,46 37,48
+                    C30,60 27,58 26,63
+                    C13,62 15,75 24,73
+                    C16,80 16,85 19,85">
+
+        </Path>
+
+
+    </Grid>
+
+</UserControl>
